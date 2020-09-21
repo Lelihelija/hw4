@@ -3,10 +3,10 @@ import './App.css';
 import {BrowserRouter as Router,Switch, Route, Redirect} from "react-router-dom";
 import SignIn from './components/signin/signin.js'
 import SignUp from './components/signup/signup.js'
-// import { Container, ContainerTitle, Card, CardInfo, CardImg, CardTitle, CardText, BouncyDiv } from "./components/stylesComponents/stylesComponents";
 
 export const SignForms = [
   {
+  
     title: "Sign in",
     path: "/signin",
     component: SignIn, // то зайти у акк
@@ -24,12 +24,13 @@ function App() {
     <Router>
       <div className="App">
           <Switch>
-              {SignForms.map(({path, component, exact = false}) => (
-                  <Route path={path} exact={exact} component={component}/>
+              {SignForms.map(({path, component, exact = false}, index) => (
+                  <Route path={path} exact={exact} key={index} component={component}/>
                   
               ))}
               {/* <Route path="/sign" exact component={Sign}/> */}
               <Route path="/" exact render={() => <Redirect to="/signin"/>}/>
+              <Route exact render={() => <Redirect to="/signin"/>}/>
           </Switch>
       </div>
     </Router>
@@ -38,3 +39,6 @@ function App() {
 }
 
 export default App;
+
+// forgot password - треба посунути наліво. нижні інпути всеодно вилазять
+//відступ згори краще в пх

@@ -1,0 +1,11 @@
+.SignupRedirectA-left {
+    flex-grow:1;
+    width: 40%;
+}
+
+.SignupRedirectA-right {
+    flex-shrink: 0;
+    width: 60%;
+    word-break: break-word;
+    text-align: right;
+}
