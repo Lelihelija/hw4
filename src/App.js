@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter as Router,Switch, Route, Redirect} from "react-router-dom";
+import {HashRouter as Router,Switch, Route, Redirect} from "react-router-dom";
 import SignIn from './components/signin/signin.js'
 import SignUp from './components/signup/signup.js'
 

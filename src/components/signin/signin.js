@@ -101,7 +101,7 @@ export default class SignIn extends Component{
                             <SignupRedirectA href="#" onClick={this.forgotPasswordFn}>Forgot password?</SignupRedirectA>
                         </div>
                         <div className="SignupRedirectA-right">
-                            <SignupRedirectA href="/HW4/signup">Don't have an account? Sign up</SignupRedirectA>
+                            <SignupRedirectA href="/hw4#/signup">Don't have an account? Sign up</SignupRedirectA>
                         </div>
                     </SigninRedirectWrapper>
                     <Copyrights>
