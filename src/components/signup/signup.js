@@ -152,7 +152,7 @@ export default class SignUp extends Component{
                         <ConfirmButton onClick={this.showPersonalData.bind(this)}>SIGN UP</ConfirmButton>
                     </div>
                     <RedirectWrapper>
-                        <SignupRedirectA href="/signin">Already have an account? Sign in</SignupRedirectA>
+                        <SignupRedirectA href="/HW4/signin">Already have an account? Sign in</SignupRedirectA>
                     </RedirectWrapper>
                     
                     <Copyrights>Copyright © Your Website 2020. </Copyrights>
